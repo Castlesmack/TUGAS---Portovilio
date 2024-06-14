@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <style>
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <ul>
+            <h1><a href="#home">Your Name</a></h1>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <div class="intro-section">
+                <img src="images/WhatsApp Image 2024-04-01 at 08.57.22_e214a9db.jpg" alt="Profile Image" height="200px">
+                <h1 style="color: #4d4d4d;">Welcome to My Portfolio</h2>
+                <p style="color: #4d4d4d;size: 50cm;">I am a passionate web developer and software engineer with expertise in front-end and back-end technologies.</p><br>
+            </div>
+        </section><br>
+
+        <section id="About" class="homepage">
+            <h1 style="text-align: center;">About Me</h1>
+            <div class="about-section">
+                <p style="text-size-adjust: 20px;text-align: center; ">
+                    My name is Diageng Ferdiyanto. I was born on August 14, 2007, in Jakarta. I am a passionate individual with interests in gaming, studying ideologies/history, martial arts, and coding. Currently, I am pursuing my education at SMK Bina Informatika. 
+                </p>
+            </div>
+        </section>
+
+        <section id="Portfolio" class="homepage">
+            <div class="portfolio-section">
+                <h1 style="text-align: center;">Portfolio</h1>
+                <div style="border:2px solid; border-radius:5px;display: flex; flex-direction: row; justify-content: center">
+                <article class="container">
+                    <img title="Washing" src="images/download.jpeg" alt="Washing">
+                    <h2>toys</h2>
+                </article>
+                <article class="container">
+                    <img title="Washing" src="images/download.jpeg" alt="Washing">
+                    <h2>toys</h2>
+                </article>
+                <article class="container">
+                    <img title="Washing" src="images/download.jpeg" alt="Washing">
+                    <h2>toys</h2>
+                </article>
+                <article class="container">
+                    <img title="Washing" src="images/download.jpeg" alt="Washing">
+                    <h2>toys</h2>
+                </article>
+                <article class="container">
+                    <img title="Washing" src="images/download.jpeg" alt="Washing">
+                    <h2>toys</h2>
+                </article>
+                <!-- Add more projects as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+<br><br><br><br>
+    <footer class="homepage">
+        <div class="footer-content">
+            <div>
+                <h2>Contact Information</h2>
+                <p>Email: example@email.com</p>
+                <p>Phone: +123456789</p>
+                <p>Address: Jl. Jati No.1121, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten 15414</p>
+            </div>
+            <div>
+                <h2>Contact Information</h2>
+                <p>Email: example@email.com</p>
+                <p>Phone: +123456789</p>
+                <!-- Additional content on the right side of the footer if needed -->
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            window.onscroll = function() {stickyNavbar()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function stickyNavbar() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

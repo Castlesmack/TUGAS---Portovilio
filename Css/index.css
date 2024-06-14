@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section h1 {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(56, 56, 56);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.navbar ul h1{
+    float:left;
+    padding-left:15px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li {
+    font-size: 20px;
+    float: right;
+    margin: 25px;
+}
+
+.navbar li:hover {
+    background-color: rgb(36, 36, 36);
+    border-radius: 25px;
+}
+
+.homepage {
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.homepage h1{
+    text-align: center;
+}
+
+#home {
+    padding-top: 150px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.intro-section {
+    margin-top: 50px;
+}
+
+.intro-section img {
+    border-radius: 50%;
+}
+
+.about-section,
+.portfolio-section,
+.contact-section {
+    margin-top: 50px;
+}
+
+#portfolio{
+	width: 31.7%;
+	margin: 10px;
+}
+
+.portfolio-display{
+	margin-bottom: 30px;
+	padding: 0 50px;
+}
+.portfolio-section {
+    overflow: hidden;
+}
+
+.portfolio-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 10px;
+	position: relative;
+}
+
+
+.portfolio-text{
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	height: 285px;
+	color: transparent;
+	width:360px;
+	top:0;
+	left: 0;
+	/*display: none;*/
+	/*font-size: 1.5rem;*/
+	
+	text-align: center;
+	padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .project img {
+        width: calc(50% - 20px); /* 50% width for each image with margin on smaller screens */
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px; /* Add some margin between articles */
+    align-items: center;
+}
+article img {
+    margin: 10px auto;
+    width: 350px; /* Modify image size */
+    height: 210px; /* Modify image size */
+    border-radius: 20px;
+    
+}
+
